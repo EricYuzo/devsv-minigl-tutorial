@@ -2,6 +2,8 @@
 
 Projeto contendo o código fonte dos tutoriais sobre desenvolvimento de jogos usando a [MiniGL](https://rubygems.org/gems/minigl) postados no [DevSV](https://devsv.wordpress.com/).
 
+**P.S.:** Todos os créditos vão para o [Victor DS](https://github.com/victords), que desenvolveu os códigos originais e o texto dos posts, além de ser o autor da MiniGL. =)
+
 O projeto está organizado em branches contendo o código fonte dos exemplos de cada post, conforme lista a seguir.
 
 ## Parte 1 - Preparando o ambiente.
