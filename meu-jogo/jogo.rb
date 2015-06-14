@@ -1,15 +1,14 @@
-require 'minigl'
-include MiniGL
+require_relative 'shuriken'
 
 class MeuJogo < GameWindow
 
     def initialize
         super 800, 600, false
-        @sprite = Sprite.new 0, 0, :img1
+        @sprite = GameObject.new 0, 0, 72, 72, :img1, Vector.new(-14, -14)
     end
 
     def draw
-        clear 0xffffff
+        clear 0xabcdef
         @sprite.draw
     end
 
