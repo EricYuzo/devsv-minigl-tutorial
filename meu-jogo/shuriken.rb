@@ -14,5 +14,10 @@ class Shuriken < GameObject
         @speed_m = speed
     end
 
+    def update
+        move_free @aim, @speed_m
+        animate [0, 1, 2, 3], 4
+    end
+
 end
 
