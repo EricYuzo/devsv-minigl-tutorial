@@ -46,7 +46,11 @@ class MeuJogo < GameWindow
             @sprite.y -= 3 if KB.key_down? Gosu::KbUp
             @sprite.y += 3 if KB.key_down? Gosu::KbDown
 
-            @shurikens.each { |s| s.update }
+            @shurikens.each { |s|
+                result = s.update(@sprite)
+                if result == :dead; return @state = :end
+                elsif s.dead; @shurikens.delete s; end
+            }
         else
             Mouse.update
             @btn.update
