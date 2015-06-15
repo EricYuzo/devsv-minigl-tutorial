@@ -30,7 +30,7 @@ git checkout parte-3
 ## Parte 4 - Gerenciamento de recursos.
 
 * Post: [Gerenciamento de recursos](https://devsv.wordpress.com/2015/03/30/programando-games-com-ruby-e-minigl-parte-4-gerenciamento-de-recursos/)
-* Branch: *em breve*.
+* Branch: Este tópico traz uma visão mais conceitual sobre o carregamento e gerenciamento dos recursos de um jogo, portanto não há um branch associado a ele.
 
 ## Parte 5 - Interface de usuário.
 
