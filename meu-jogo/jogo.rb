@@ -25,8 +25,10 @@ class MeuJogo < GameWindow
         if @state == :playing
             @sprite.draw
             @shurikens.each { |s| s.draw }
+            @font.draw @score, 5, 580, 0, 1, 1, 0xff000000
         else
             @btn.draw
+            @font.draw_rel "Fim de jogo. Você fez #{@score} pontos", 400, 250, 0, 0.5, 0, 1, 1, 0xff000000 if @state == :end
         end
     end
 
