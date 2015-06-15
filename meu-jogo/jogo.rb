@@ -8,6 +8,12 @@ class MeuJogo < GameWindow
         @state = :new
         @font = Res.font(:font1, 16)
         @btn = Button.new(350, 285, @font, 'Jogar', :btn) {
+            @sprite.x = 364
+            @sprite.y = 264
+            @shurikens = []
+            @shuriken_prob = 0.005
+            @frame_counter = 0
+            @score = 0
             @state = :playing
         }
         @shurikens = []
@@ -39,6 +45,13 @@ class MeuJogo < GameWindow
                 end
                 speed = 2 + rand(3)
                 @shurikens << Shuriken.new(x, y, dir, speed)
+            end
+
+            @shuriken_prob += 0.000005
+            @frame_counter += 1
+            if @frame_counter == 60
+                @score += 1
+                @frame_counter = 0
             end
 
             @sprite.x -= 3 if KB.key_down? Gosu::KbLeft
