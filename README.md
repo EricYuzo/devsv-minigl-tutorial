@@ -22,7 +22,10 @@ git checkout parte-2
 ## Parte 3 - Um jogo (de verdade).
 
 * Post: [Um jogo (de verdade)](https://devsv.wordpress.com/2015/03/22/programando-games-com-ruby-e-minigl-parte-3-um-jogo-de-verdade/)
-* Branch: *em breve*.
+* Branch: **parte-3**. Para acessá-lo:
+```
+git checkout parte-3
+```
 
 ## Parte 4 - Gerenciamento de recursos.
 
