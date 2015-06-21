@@ -16,8 +16,6 @@ class MeuJogo < GameWindow
             @score = 0
             @state = :playing
         }
-        @shurikens = []
-        @shuriken_prob = 0.005
     end
 
     def draw
